@@ -9,6 +9,10 @@ img{
   border-radius: 20px;
 }
 
+.billBoard{
+  border: 10px black;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -190,6 +194,7 @@ h6,
 .readmore {
   display: inline-block;
   border: 1px solid #000;
+  border-radius: 10px;
   padding: 10px 15px;
   font-size: 12px;
   text-transform: uppercase;
