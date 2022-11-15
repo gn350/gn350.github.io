@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MyPortfolio Bootstrap Template - About</title>
+  <title>MyPortfolio Bootstrap Template - Contact</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -45,7 +45,7 @@
             <li><a href="about.html">About Me</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="works.html">Works</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-6 d-none d-md-block  mr-auto">
@@ -78,32 +78,70 @@
 
     <section class="section pb-5">
       <div class="container">
+
         <div class="row mb-5 align-items-end">
           <div class="col-md-6" data-aos="fade-up">
-
-            <h2>It's nice to meet you!</h2>
+            <h2>Contact</h2>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut
+              officiis explicabo inventore.
+            </p>
           </div>
 
         </div>
 
         <div class="row">
-          <div class="col-md-7 ml-auto order-2" data-aos="fade-up">
-            <p class="mb-0">Hello, my name is Grace, and I am an <b>electrical engineering major at the Georgia Institute of Technology</b>, with planned threads in <a href="https://www.ece.gatech.edu/circuit-technology-thread" target="blank">Circuit Technology</a> and <a href="https://www.ece.gatech.edu/electronic-optoelectronic-devices-thread" target="blank">Electronic Devices</a>.  I am also pursuing a Computer Science minor in <a href="https://www.cc.gatech.edu/degree-programs/minor-computational-data-analysis" target="blank">Computational Data Analysis</a>.</p>
-            <br>
-            <p>Born and raised in Minnesota, I ...  At age nine, I curiously connected Christmas mini-LED electrodes to a nine-volt battery.  With a <i>POP!</i> and a wisp of smoke, my interest in electrical engineering was sparked.</p>
+          <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+              <div class="row gy-3">
+                <div class="col-md-6 form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="name">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+                <div class="col-md-12 form-group">
+                  <label for="name">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+                <div class="col-md-12 form-group">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" cols="30" rows="10" required></textarea>
+                </div>
+
+                <div class="col-md-12 my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <div class="col-md-6 mt-0 form-group">
+                  <input type="submit" class="readmore d-block w-100" value="Send Message">
+                </div>
+              </div>
+
+            </form>
+
           </div>
 
-          <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up">
-            <p><img src="assets/img/person_1_sq.jpg" alt="Image" class="img-fluid"></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dignissimos delectus minima reprehenderit
-              molestias illo dolorem et, odio!</p>
-            <p>Fuga fugit distinctio delectus iure vitae consequatur excepturi, mollitia, consectetur molestias sapiente
-              rem consequuntur, illum adipisci, sed obcaecati!</p>
-            <p>Ex, dolorem qui voluptas reprehenderit provident, ad ipsum iure a consequatur voluptatem incidunt nobis.
-              Vitae reiciendis quae ex.</p>
-            <p>Optio consectetur culpa nemo, fugit pariatur veniam voluptate laudantium rerum fuga dolor in maiores ea
-              nisi voluptatibus. Minus?</p>
-            <p><a href="#" class="readmore">Download my CV</a></p>
+          <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong class="d-block mb-1">Address</strong>
+                <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Phone</strong>
+                <span>+1 232 3235 324</span>
+              </li>
+              <li class="mb-3">
+                <strong class="d-block mb-1">Email</strong>
+                <span>youremail@domain.com</span>
+              </li>
+            </ul>
           </div>
 
         </div>
