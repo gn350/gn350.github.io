@@ -5,11 +5,16 @@
 * License: https://bootstrapmade.com/license/
 */
 
+img{
+  border-radius: 20px;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: "calibri", monospace;
+  font-weight: 400;
   color: #0d1e2d;
 }
 
