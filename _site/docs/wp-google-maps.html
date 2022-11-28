@@ -90,20 +90,16 @@
         <div class="container">
           <div class="row align-items-stretch">
             <div class="col-md-6" data-aos="fade-up">
-              <iframe width="100%" height="75%" src="https://www.youtube.com/embed/ih00KXsK-8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 20px;"></iframe>
+              <img src="assets\img\wp-google-maps.PNG" alt="" width="100%">
             </div>
             <div class="col-md-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <div>
                 <h4 class="h4 mb-3">What I did</h4>
                 <ul class="mb-5">
-                  <li>Organized a team, assigned tasks, and oversaw all aspects of project</li>
-                  <li>Developed web application for users to search medical bill costs in their state and compare to data inputted by other users </li>
-                  <li>Used HTML and CSS (with Bootstrap) to build application frontend and JavaScript (Node.JS and Express.JS) to implement form, search, and filtering functions</li>
+                  <li>Used Python to develop application to transform JSON file coordinates into a format compatible with WP Google Maps </li>
                 </ul>
 
-                <p><a href="https://github.com/rajoayalew/billBoard-HackGT" class="readmore" target="blank">Hackathon GitHub</a> <a href="https://devpost.com/software/billboard-5rjkv1" class="readmore" target="blank">Hackathon Submission</a></p>
-                <p>billBoard's journey did not end with HackGT9.  Check out the improvements made since then:</p>
-                <p><a href="https://github.com/rajoayalew/billBoard" class="readmore" target="blank">billBoard today</a></p>
+                <p><a href="https://github.com/gn350/transformCoordinates" class="readmore" target="blank">Project GitHub</a></p>
               </div>
             </div>
           </div>
@@ -112,43 +108,15 @@
       <div class="container" data-aos="fade-up">
         <br>
         <h3>Inspiration</h3>
-        <p>From the beginning, our team was driven to create an application to improve the quality of life and accessibility of daily services. After researching issues experienced by vulnerable populations and minority groups in healthcare and medicine, we came to the realization that medical bill transparency is a major issue across the United States.</p>
+        <p>For my work as a website technician, I was asked to test different solutions to implement a regional map function into WordPress websites.  WP Google Maps was one of the first plugins I tested, but it was quickly ruled out as it was lacking multiple key features my team was searching for, including the ability to seemlessly interpret JSON coordinate file data.  While inputting coordinate data to create a polygon region, WP Google Maps unconventionally swaps the longitude and latitude coordinates. </p>
         <br>
         <h3>What it does</h3>
-        <p>billBoard creates a more equitable healthcare system, one bill at a time. billBoard increases transparency in medical costs by collecting and comparing data on the most common medical procedures and their average pricing in different states across the country. The billBoard platform features data collection, analysis and verification, and comparison of medical bill data, contributed by our diverse user community. By analyzing and presenting this data, billBoard can be used to help users better understand their expected medical bill costs.
+        <p>The WP Google Maps Script transforms traditional JSON file coordinates into a format compatible with the WordPress plugin, WP Google Maps, allowing users to quickly and efficiently add regions to their WordPress website.  The script is designed for the "Polygon data" textbox entry under "Polygons" and can be run locally on a PC or online using Jupyter Notebooks.</p>
+        <h3>How to use</h3>
+        <p>If running the application locally, clone the project GitHub repository onto the PC and download the regional data JSON file into the same folder.  If running the application online, open a Jupyter Notebook in Google Drive and upload the regional data JSON file into the same folder.
         <br><br>
-        Users are able to “post a bill” with information from their previous medical bills to add to the “billBoard,” where other users are able to search for medical bills of particular procedures. All posts are anonymous and the data of each user is not shared.
-        <br><br>
-        Currently, billBoard takes in data from the “post a bill” website form once a user inputs information about their relevant medical experience (their “bill”). This data is then sent to a server-side relational SQL database using the HTML Post Request API. This API can write to and receive information from the database, where bill information is stored.
-        <br><br>
-        As of now, the website is only able to display static medical bill information pre-generated from a Python script on the “billBoard” for a specific test case. Our team is passionate about billBoard and hopes to create a working search function to retrieve dynamic data from the database and display it on the website in real-time.</p>
-        <br>
-        <h3>How we built it</h3>
-        <p>The billBoard website was built from a Bootstrap template with customized HTML/CSS and Javascript, taking inspiration from Figma, Google Fonts API, and Coolors.co. Express.js, Node.js, and an SQL (SQLite) database were used in the backend.
-        <br><br>
-        Our team also built a Python script to automatically generate thousands of statistically-correct random numbers in order to imitate realistic user entries for the billBoard.</p>
-        <br>
-        <h3>Challenges we ran into</h3>
-        <p>
-          Initially, our team planned to use PyScript (Python in HTML) as the interface between the input form and the database. However, PyScript requires the entire database to be on the client side, so it would not be compatible with a web app.
-          <br><br>
-          With only ten hours left until the submission deadline and the backend yet to be assembled, we decided to switch routes and use Node.js and Express.js to build the backend. After self-teaching both frameworks and rebuilding the backend, the frontend was reconfigured to seamlessly connect the SQL database and the datasets. In the future, our team hopes to create a working search function to retrieve dynamic data from the database and display it on the website in real-time.
-        </p>
-        <br>
-        <h3>Accomplishments that we're proud of</h3>
-        <p>
-          Our team is extremely proud of our collaboration, flexibility, and passion during HACKGT. When things did not go as initially planned, the team was able to quickly pivot and take the development in a completely different direction, even with little time remaining.
-          <br><br>
-          Most of all, we are proud of how we leveraged each members’ unique skills and abilities to cooperate and make a significant, fulfilling final product.
-        </p>
-        <br>
-        <h3>What we learned</h3>
-        <p>
-          Over the course of 36 hours, our team learned to continue adjusting and improving to new situations and challenges. We learned to face problems head on, including Javascript. At the beginning, our team planned to use PyScript to interact with web pages instead of using Javascript. However, there were some limitations with PyScript, which led us to rewrite the entire backend of the project with ten hours to spare. Even so, the team was able to adapt by self-teaching Node.js and Express.js while pressed for time. In the end, billBoard regained almost all functionality.
-        </p>
-        <br>
-        <h3>What's next for billBoard</h3>
-        <p>billBoard’s journey does not end with HACKGT. Our team is passionate about billBoard and hopes to create a working search function to retrieve dynamic data from the database and display it on the website in real-time. In addition, we want to increase the functionality by adding additional fields, such as insurance providers and hospitals, providing a wider range of statistics, and building data visualization. Other goals include hosting the website on the public domain, applying a cost-breakdown analysis, and implementing computer vision so data does not have to be manually entered.</p>
+        Read more below for guidance on obtaining JSON file data for map regions.  Run transformCoordinates.py.  Enter the JSON file name.  The program will create a new .txt file with the text of the transformed coordinates, compatible with WP Google Maps.  Close out of the running program, open the new .txt file, and copy its contents.  Read more below on entering this data into the WP Google Maps Plugin and creating a polygon region.</p>
+        <p><a href="https://drive.google.com/file/d/147OCSeHabqpgEY6rCG_zgMBphx3oNS5W/view?usp=sharing" class="readmore" target="blank">Obtaining JSON File Data for Map Regions</a></p> <p><a href="https://drive.google.com/file/d/1Y5q5IpPgYhv2qohJ6qCaAkOWoWmpM-lF/view?usp=sharing" class="readmore" target="blank">Entering Data into WP Google Maps</a></p>
       </div>  
     </section>
   </main><!-- End #main -->
